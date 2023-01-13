@@ -1,0 +1,76 @@
+ErrorDocument 403 /page31997594.html
+ErrorDocument 404 /page31997594.html
+
+DirectoryIndex page31906421.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://abservices\.kz/$1 [R=301,L]
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =https
+RewriteCond %{HTTP_HOST} ^www\.abservices.kz [NC]
+RewriteRule ^(.*)$ https://abservices\.kz/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^error$ page31997594.html [NC]
+RewriteRule ^error/$ page31997594.html [NC]
+
+RewriteRule ^licensing$ page32381391.html [NC]
+RewriteRule ^licensing/$ page32381391.html [NC]
+
+RewriteRule ^buhgalter_soprovozhdenie$ page32413265.html [NC]
+RewriteRule ^buhgalter_soprovozhdenie/$ page32413265.html [NC]
+
+RewriteRule ^likvidacia$ page32413397.html [NC]
+RewriteRule ^likvidacia/$ page32413397.html [NC]
+
+RewriteRule ^vostanovlenie$ page32416234.html [NC]
+RewriteRule ^vostanovlenie/$ page32416234.html [NC]
+
+RewriteRule ^service_outsourcing$ page32633304.html [NC]
+RewriteRule ^service_outsourcing/$ page32633304.html [NC]
+
+RewriteRule ^service_restoration$ page32634384.html [NC]
+RewriteRule ^service_restoration/$ page32634384.html [NC]
+
+RewriteRule ^service_suspension$ page32634642.html [NC]
+RewriteRule ^service_suspension/$ page32634642.html [NC]
+
+RewriteRule ^service_delivery$ page32634714.html [NC]
+RewriteRule ^service_delivery/$ page32634714.html [NC]
+
+RewriteRule ^service_statical-form$ page32635080.html [NC]
+RewriteRule ^service_statical-form/$ page32635080.html [NC]
+
+RewriteRule ^service_liquidation$ page32635358.html [NC]
+RewriteRule ^service_liquidation/$ page32635358.html [NC]
+
+RewriteRule ^service_production$ page32635606.html [NC]
+RewriteRule ^service_production/$ page32635606.html [NC]
+
+RewriteRule ^service_giving-export$ page32642124.html [NC]
+RewriteRule ^service_giving-export/$ page32642124.html [NC]
+
+RewriteRule ^service_giving-evidence$ page32642301.html [NC]
+RewriteRule ^service_giving-evidence/$ page32642301.html [NC]
+
+RewriteRule ^service_giving-certificate$ page32642389.html [NC]
+RewriteRule ^service_giving-certificate/$ page32642389.html [NC]
+
+RewriteRule ^service_giving-ecology$ page32642466.html [NC]
+RewriteRule ^service_giving-ecology/$ page32642466.html [NC]
+
+RewriteRule ^service_giving-licence$ page32642509.html [NC]
+RewriteRule ^service_giving-licence/$ page32642509.html [NC]
+
+RewriteRule ^service_giving-licence2$ page32642572.html [NC]
+RewriteRule ^service_giving-licence2/$ page32642572.html [NC]
+
+RewriteRule ^service_giving-licence3$ page32642694.html [NC]
+RewriteRule ^service_giving-licence3/$ page32642694.html [NC]
+
+RewriteRule ^favicon.ico$ https://static.tildacdn.com/tild3634-3062-4365-a563-366262653532/favicon.ico [R=302,L]
+
